@@ -34,7 +34,7 @@
 									<!-- sub-menu end-->
 								</li>
 								<li><a href="#about">關於我們</a></li>
-								<li><a href="https://x123x.ga/tutorial.html">使用教學</a></li>
+								<li><a href="#" onClick="alert('那麼簡單，應該不需要教學吧!')" class="" >使用教學</a></li>
 							</ul>
 						</div>
 					</div>
@@ -71,7 +71,7 @@
 													</li>
 												</ul>
 											</li>
-											<li class=""><a href="https://x123x.ga/tutorial.html" class="" >使用教學</a></li>
+											<li class=""><a href="#" onClick="alert('那麼簡單，應該不需要教學吧!')" class="" >使用教學</a></li>
 										</ul>
 									</div>
 								</div>
@@ -99,10 +99,11 @@
 				    $('#acc_btn').attr('disabled', 'disabled');
 				    var elem = document.getElementById("progress_bar");  
 				    var width = 0;
-				    var id = setInterval(frame, getRandomArbitrary(200, 10000));
+				    var id = setInterval(frame, getRandomArbitrary(200, 8000));
 				    function frame() {
 				if (width >= 100) {
 				  clearInterval(id);
+                  alert('Sorry ~! 今日的贈與額度已額滿!! 請明天再來搶喔!');
 				} else {
 				  width++; 
 				  elem.style.width = width + '%'; 
